@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+.pinkButton {
+  color: "#FFB6C1";
+}
+.no-button {
+  background-color: #ffb5e5 !important;
+  color: white;
+  border-radius: 8px;
+}
+.light-color-text {
+  color: #b5fff4 !important;
+}
+.yes-button {
+  background-color: #ff5e76;
+  color: #fffff7;
+  border-radius: 8px; /* Slightly rounded corners */ /* Smooth hover effects */
+}
+.oi-regular {
+  font-family: "Oi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.finger-paint-regular {
+  color: #330f14 !important;
+  font-family: "Finger Paint", serif;
+  font-weight: 400;
+  font-size: larger;
+  font-style: normal;
+}
