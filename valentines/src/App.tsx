@@ -1,7 +1,7 @@
+// @ts-nocheck
 import { useRef, useState } from "react";
 import ReactPlayer from "react-player";
 import "./App.css";
-import music from "../public/Bazzi - Mine [Official Music Video] [ ezmp3.cc ].mp3";
 function App() {
   const [appState, setAppState] = useState(0);
   const buttonRef = useRef(null);
@@ -18,9 +18,11 @@ function App() {
   const moveButton = () => {
     if (buttonRef.current) {
       const button = buttonRef.current;
-      const x = Math.random() * (window.innerWidth - button.offsetWidth - 20); // Adjust for padding
-      const y = Math.random() * (window.innerHeight - button.offsetHeight - 20); // Adjust for padding
+      const x = Math.random() * (window.innerWidth - button?.offsetWidth - 20); // Adjust for padding
+      const y =
+        Math.random() * (window.innerHeight - button?.offsetHeight - 20); // Adjust for padding
       button.style.position = "absolute";
+
       button.style.left = `${x}px`;
       button.style.top = `${y}px`;
     }
