@@ -5,7 +5,6 @@ import music from "../public/Bazzi - Mine [Official Music Video] [ ezmp3.cc ].mp
 function App() {
   const [appState, setAppState] = useState(0);
   const buttonRef = useRef(null);
-  const audioRef = useRef(null);
   const finalStep = () => {
     setAppState(2);
     // const audio = new Audio(
